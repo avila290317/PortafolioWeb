@@ -8,10 +8,12 @@ backDelay:1000,
 loop:true
 });
 
+/*FUNCION PARA EL MENU-ICON*/
 let menu = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
 menu.onclick = () => {
     menu.classList.toggle('bx-x');
     navbar.classList.toggle('open')
+    console.log("HOLA")
 };

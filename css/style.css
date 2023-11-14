@@ -92,7 +92,7 @@ body {
         left: 100%;
         display: flex;
         flex-direction: column;
-        background: #2d2d2d;
+        background: #081b29;
         transition: all 0.4s ease-in-out;
     }
     .navbar a{
@@ -103,7 +103,7 @@ body {
         font-size: 2rem;
         font-weight: 400;
     }
-    .navbar .open{
+    .navbar.open{
         left: 0;
     }
 }
@@ -117,7 +117,7 @@ body {
 /*HOME*/
 
 section{
-    padding: 0 15%;
+    margin-bottom: 20px;
 }
 
 .home {
@@ -220,9 +220,7 @@ section{
         0 0 100px cyan, 0 0 200px cyan
 }
 
-
-
-
+/*ABOUT*/
 .about
 {
     display: grid;
@@ -232,11 +230,14 @@ section{
 }
 
 .about-img img{
-    padding-bottom: 20%;
-    max-width: 630px;
+    /*padding-bottom: 0%;*/
+    max-width: 300px;
     height: auto;
     width: 100%;
-    border-radius: 8px;
+    border-radius: 95%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
 }
 
 .about-text h2{
@@ -259,8 +260,10 @@ section{
     color: aliceblue;
     font-size: 20px;
     line-height: 1.4;
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
 }
+
+
 
 #services{
     color: aliceblue;
