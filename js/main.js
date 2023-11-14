@@ -1,26 +1,17 @@
 /*FUNCION PARA QUE LAS PALABRAS ESTEN DESPLEGANDO UNA EN SEGUIDA DE LA OTRA (H3 SPAN)*/
 
-var typewriter = $('.text');
+var typed = new Typed('.text', {
+strings:["FRONTEND DEVELOPER","WEB DEVELOPER"],
+typeSpeed:100,
+backSpeed:100,
+backDelay:1000,
+loop:true
+});
 
-  if(typewriter.length) {
+let menu = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
 
-    function initTypewriter() {
-
-     var typed = new Typed(".text", {
-        strings: $(".text").attr("data-typewriter").split("|").map(function(e) {
-          return e
-        }),
-        typeSpeed: 80,
-        backSpeed: 75,
-        startDelay: 1000,
-        backDelay: 2000,
-        loop: !0,
-        loopcount: false,
-        showCursor: false,
-        callback: function(e){ } // call function after typing is done
-        });
-    };
-
-    initTypewriter();
-
-  };
+menu.onclick = () => {
+    menu.classList.toggle('bx-x');
+    navbar.classList.toggle('open')
+};

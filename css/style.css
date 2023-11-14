@@ -1,3 +1,5 @@
+/*HEADER*/
+
 * 
 {
     margin: 0;
@@ -9,24 +11,26 @@
 body {
     color: #ededed;
     background: #081b29;
+    overflow-x: hidden;
 }
 
 .header {
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 20px 10%;
     background: #051129;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
+    left: 0;
 }
 
 .logo {
     position: relative;
-    font-size: 25px;
+    font-size: 41px;
     color: #fff;
     text-decoration: none;
     font-weight: 600;
@@ -35,12 +39,19 @@ body {
     animation: slideRight 1s ease forwards;
 }
 
+.logo span{
+    color: #0ef;
+}
+
+.navbar{
+    display: flex;
+}
+
 .navbar a {
-    display: inline-block;
     font-size: 25px;
     color: #fff;
-    text-decoration: none;
     font-weight: 500;
+    text-decoration: none;
     margin-left: 35px;
     transition: .3s;
     opacity: 0;
@@ -52,25 +63,82 @@ body {
     color: #0ef;
 }
 
+.menu-btn {
+    background:#0ef;
+    border: 1px solid #051129;
+    color: #051129;
+    padding: 10px 15px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#menu-icon{
+    font-size: 28px;
+    margin-left: 10px;
+    z-index: 6;
+}
+
+@media (max-width: 850px){
+    .navbar{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        padding: 40px 50px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 100%;
+        display: flex;
+        flex-direction: column;
+        background: #2d2d2d;
+        transition: all 0.4s ease-in-out;
+    }
+    .navbar a{
+        display: block;
+        color: #c3c3c3;
+        padding: 0px;
+        margin: 0px 0px 40px 0px;
+        font-size: 2rem;
+        font-weight: 400;
+    }
+    .navbar .open{
+        left: 0;
+    }
+}
+
+@media (max-width: 500px){
+    .btn{
+        padding: 9px 28px;
+    }
+}
+
+/*HOME*/
+
+section{
+    padding: 0 15%;
+}
+
 .home {
     position: relative;
     width: 100%;
-    justify-content: space-between;
     height: 100vh;
-    /*background: #081b29;*/
-    background: url(/img/Free_Sample_By_Wix.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    gap:30px;
+    background: #081b29;
+    background-size: cover;
+    background-position: center;
     padding: 70px 10% 0;
 }
 
-.home-content {
+.home-text {
     max-width: 1000px;
 }
 
-.home-content h3 {
+.home-text h3 {
     font-size: 32px;
     font-weight: 700;
     opacity: 0;
@@ -78,17 +146,17 @@ body {
     animation-delay: .7s;
 }
 
-.home-content h3:nth-of-type(2) {
+.home-text h3:nth-of-type(2) {
     margin-bottom: 30px;
     animation: slideTop 1s ease forwards;
     animation-delay: .7s;
 }
 
-.home-content h3 span {
+.home-text h3 span {
     color: #0ef;
 }
 
-.home-content h1 {
+.home-text h1 {
     font-size: 56px;
     font-weight: 700;
     margin: -3px 0;
@@ -97,7 +165,7 @@ body {
     animation-delay: 1s;
 }
 
-.home-content p {
+.home-text p {
     font-size: 20px;
     opacity: 0;
     animation: slideLeft 1s ease forwards;
@@ -151,6 +219,9 @@ body {
         0 0 25px cyan, 0 0 50px cyan,
         0 0 100px cyan, 0 0 200px cyan
 }
+
+
+
 
 .about
 {
@@ -334,11 +405,11 @@ section{
     height: 5px;
     background-color: #000000;
     animation: animate 1s cubic-bezier(1,0,0,5,1) forwards;
-    /*transform: scaleX(0);
-    transform-origin: left;*/
+    transform: scaleX(0);
+    transform-origin: left;
 }
 
-@keyframes animate{
+@keyframes animate {
     100%{
         transform: scaleX(1);
     }
@@ -356,6 +427,10 @@ section{
 
 
 .progress-line.html span{
+    width: 90%;
+}
+
+.progress-line.css span{
     width: 90%;
 }
 
@@ -380,8 +455,27 @@ section{
     content: "60%";
 }
 
+.progress-line.js span::after{
+    content: "60%";
+}
+
+.progress-line.react span::after{
+    content: "60%";
+}
 
 
+
+
+
+
+/*Professional skills*/
+.radial-bars{
+    width: 100%;
+    display: flex;
+    height: 170px;
+    margin-bottom: 10px;
+    position: relative;
+}
 
 
 
