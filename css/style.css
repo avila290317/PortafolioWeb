@@ -6,6 +6,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -117,7 +120,9 @@ body {
 /*HOME*/
 
 section{
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;*/
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .home {
@@ -221,49 +226,54 @@ section{
 }
 
 /*ABOUT*/
-.about
-{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+
+.about{
+    display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 1.5rem;
+    flex-direction: column;
+    gap: 2rem;
+    padding-bottom: 2rem;
 }
+
+.about-text{
+    font-size: 4rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.about-text span{
+    color:#0ef;
+}
+
+.about-img{
+    position: relative;
+    width: 25rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
 
 .about-img img{
-    /*padding-bottom: 0%;*/
-    max-width: 300px;
-    height: auto;
-    width: 100%;
-    border-radius: 95%;
-    object-fit: cover;
-    display: block;
-    margin: 0 auto;
+    width: 90%;
+    border-radius: 50%;
+    border: .2rem solid #0ef;
 }
 
-.about-text h2{
-    font-size: 60px;
+.about-content{
+    text-align: center;
 }
 
-.about-text h2 span{
-    color: #0ef;
-}
-
-.about-text h4{
-    font-size: 29px;
-    font-weight: 600;
-    color: #fff;
-    line-height: 1.7;
-    margin: 15px 0 30px;
-}
-
-.about-text p{
-    color: aliceblue;
-    font-size: 20px;
-    line-height: 1.4;
-    margin-bottom: 1rem;
+.about-content p{
+    font-size: 1.1rem;
+    margin: 2rem 0 3rem;
 }
 
 
+/*SERVICES*/
 
 #services{
     color: aliceblue;
@@ -284,7 +294,6 @@ section{
 
 .container{
     padding: 90px;
-
 }
 
 .services-list{
@@ -353,17 +362,13 @@ section{
     transform: translateY(-10px);
 }
 
-
-section{
-    display: flex;
-    flex-wrap: wrap;
-}
+/*HABILIDADES*/
 
 .container1{
     width: 600px;
     height: 500px;
     padding: 75px 90px;
-    margin-left: 120px;
+    /*margin-left: 120px;*/
 }
 
 .heading1{
@@ -407,34 +412,46 @@ section{
     width: 100%;
     height: 5px;
     background-color: #000000;
-    animation: animate 1s cubic-bezier(1,0,0,5,1) forwards;
-    transform: scaleX(0);
+    /*animation: animate 1s cubic-bezier(1,0,0,5,1) forwards;
+    transform: scaleX(0);*/
     transform-origin: left;
 }
 
-@keyframes animate {
+@keyframes animates{
     100%{
         transform: scaleX(1);
     }
 }
+
 
 .Technical-bars .bar .progress-line span{
     height: 100%;
     background-color: #0ef;
     position: absolute;
     border-radius: 10px;
-    animation: animate 1s 1s cubic-bezier(1,0,0,5,1) forwards;
-    transform: scaleX(0);
+    /*animation: animate 1s 1s cubic-bezier(1,0,0,5,1) forwards;
+    transform: scaleX(0);*/
     transform-origin: left;
 }
 
-
 .progress-line.html span{
-    width: 90%;
+    width: 95%;
 }
 
 .progress-line.css span{
-    width: 90%;
+    width: 60%;
+}
+
+.progress-line.javascript span{
+    width: 50%;
+}
+
+.progress-line.mongo span{
+    width: 85%;
+}
+
+.progress-line.react span{
+    width: 63%;
 }
 
 .progress-line span::after{
@@ -451,38 +468,149 @@ section{
 }
 
 .progress-line.html span::after{
-    content: "90%";
+    content: "95%";
 }
 
 .progress-line.css span::after{
     content: "60%";
 }
 
-.progress-line.js span::after{
-    content: "60%";
+.progress-line.javascript span::after{
+    content: "50%";
+}
+
+.progress-line.mongo span::after{
+    content: "85%";
 }
 
 .progress-line.react span::after{
-    content: "60%";
+    content: "63%";
 }
 
+.progress-line span::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    top: -10px;
+    right: 0;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
 
-
-
-
+@keyframes showText{
+    100%{
+        opacity: 1;
+    }
+}
 
 /*Professional skills*/
+
 .radial-bars{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.radial-bars .radial-bar{
+    width: 50%;
     height: 170px;
     margin-bottom: 10px;
     position: relative;
 }
 
+.radial-bars .radial-bar svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    width: 120px;
+    height: 160px;
+}
 
+.radial-bars .radial-bar .progress-bar{
+    stroke-width: 10;
+    stop-color: #000;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+    animation: animate-bar 1s linear forwards;
+}
 
+@keyframes animate-bar{
+    100%{
+        stroke-dashoffset: -1;
+    }
+}
 
+.path{
+    stroke-width: 10;
+    stroke: #0ef;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+}
+
+.path-1{animation: animate-path-1 1s 1s linear forwards;}
+.path-2{animation: animate-path-2 1s 1s linear forwards;}
+.path-3{animation: animate-path-3 1s 1s linear forwards;}
+.path-4{animation: animate-path-4 1s 1s linear forwards;}
+
+@keyframes animate-path-1{
+    100%{
+        stroke-dashoffset: 50;;
+    }
+}
+
+@keyframes animate-path-2{
+    100%{
+        stroke-dashoffset: 175;;
+    }
+}
+
+@keyframes animate-path-3{
+    100%{
+        stroke-dashoffset: 125;;
+    }
+}
+
+@keyframes animate-path-4{
+    100%{
+        stroke-dashoffset: 40;;
+    }
+}
+
+.radial-bar .porcentage{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+
+.radial-bar .text{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50px);
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
 
 @keyframes slideRight {
     0% {

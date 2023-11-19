@@ -4,10 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="PWA PW.">
+    <link rel="apple-touch-icon" href="img/img-Naty.jpeg">
     <title>PORTAFOLIO WEB</title>
     <link rel="stylesheet" href="css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <link rel="manifest" href="manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes"> 
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="black">
 </head>
 
 <body>
@@ -33,11 +40,11 @@
     <!--HOME-->
     <section class="home">
         <div class="home-text">
-            <p>Software Developer</p>
+            <p>Ingeniera en Desarrollo y Gestión de Software</p>
             <h1>Natalia Avila Hernandez</h1>
             <h3>YO SOY UNA <span class="text"></span>
             </h3>
-            <p>YO SOY UNA DESARROLLADORA WEB
+            <p>SOY UNA DESARROLLADORA WEB
                 <br>EXPERTA EN CREAR Y DISEÑAR SITIOS WEB
             </p>
             <div class="home-sci">
@@ -46,74 +53,91 @@
                 <a href="#" style="--i:9"><i class='bx bxl-whatsapp'></i></a>
                 <a href="#" style="--i:10"><i class='bx bxl-tiktok'></i></a>
             </div>
-            <a href="#" class="btn-box">Descargar CV</a> 
+            <a href="/CV/CV NATALIA AVILA HERNANDEZ.pdf" download="CV" class="btn-box">Descargar CV</a>
         </div>
     </section>
 
     <!--ABOUT-->
 
     <section class="about" id="about">
+        <h2 class="about-text">Acerca de <span>mi</span></h2>
+
         <div class="about-img">
             <img src="img/img-Naty.jpeg" alt="">
         </div>
-        <div class="about-text">
-            <h2>Acerca de <span>Mi</span></h2>
-            <h4>full stack developer</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi tempora nobis et similique temporibus,
-                illum saepe sed aperiam doloribus est ipsam inventore rerum repellendus? Ullam adipisci sequi ipsam
-                corporis blanditiis?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi tempora nobis et similique temporibus,
-                illum saepe sed aperiam doloribus est ipsam inventore rerum repellendus? Ullam adipisci sequi ipsam
-                corporis blanditiis?</p>
 
-            <a href="#" class="btn-box">Mas acerca de mi</a>
-        </div>
+        <div class="about-content">
+        <p>
+            Mi nombre es Natalia Avila Hernandez y actualmente estoy inmersa en el emocionante mundo universitario.
+                Mi pasión por el aprendizaje y la voluntad de enfrentar nuevos desafíos me han llevado a destacar en
+                habilidades clave como el trabajo en equipo, la comunicación y el liderazgo.
+
+                Como estudiante universitaria, estoy comprometida con el objetivo de completar mi carrera académica,
+                buscando constantemente oportunidades para expandir mis conocimientos y habilidades. Mi enfoque no se
+                limita únicamente al ámbito académico; también me apasiona el maquillaje y estoy constantemente
+                explorando nuevas técnicas y tendencias en este fascinante mundo creativo.
+
+                Además de mis estudios y pasión por el maquillaje, tengo un fuerte deseo de descubrir el mundo a través
+                de los viajes. Creo que cada experiencia enriquece nuestra perspectiva y nos brinda la oportunidad de
+                aprender de diversas culturas y tradiciones. 
+
+                En mi vida diaria, me esfuerzo por ser una persona proactiva y positiva, siempre dispuesta a asumir
+                desafíos y aprender cosas nuevas. Mi meta actual es completar mi carrera con éxito y seguir creciendo
+                tanto personal como profesionalmente. 
+
+                Estoy emocionada por lo que el futuro me depara y por las oportunidades de aprendizaje que seguirán
+                cruzando mi camino. ¡Gracias por conocer un poco más sobre mí!
+        </p>
+    </div>
     </section>
+
+    <!--SERVICES-->
 
     <section class="services" id="services">
         <div class="container">
-            <h1 class="sub-title">Mis <span>servicios</span></h1>
+            <h1 class="sub-title">¿A que me<span>dedico?</span></h1>
             <div class="services-list">
                 <div>
-                    <i class='bx bx-code' style='color:#00eeff'></i>
-                    <h2>UI/UX Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae commodi at magnam est! Vel, vero
-                        ad veniam nostrum, incidunt expedita placeat animi explicabo velit iste quaerat, doloremque sint
-                        distinctio consequuntur.</p>
-                        <a href="" class="read">lear more</a>
+                    <i class='bx bx-laptop' style='color:#00eeff'></i>
+                    <h2>Estudio</h2>
+                    <p>Soy estudiante de la carrera Ingenieria en Desarrollo y Gestión de Software
+                         en la Universidad Tecnologica del Norte de Aguascalientes, curso el decimo cuatrimestre.
+
+                    </p>
                 </div>
                 <div>
-                    <i class='bx bx-crop' style='color:#00eeff'></i>
-                    <h2>UI/UX Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae commodi at magnam est! Vel, vero
-                        ad veniam nostrum, incidunt expedita placeat animi explicabo velit iste quaerat, doloremque sint
-                        distinctio consequuntur.</p>
-                        <a href="" class="read">lear more</a>
+                    <i class='bx bx-store' style='color:#00eeff'></i>
+                    <h2>Trabajo</h2>
+                    <p>Soy trabajadora en la tienda de abarrotes El centenario, esta tienda se encuentra en la 
+                        localidad donde vivo, mi principal función es inventariar los productos que llegan 
+                        dia con dia. El turno que desempeño es de 8:00am - 3:00pm.
+                    </p>
                 </div>
                 <div>
-                    <i class='bx bxl-apple' style='color:#00eeff'></i>
-                    <h2>UI/UX Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae commodi at magnam est! Vel, vero
-                        ad veniam nostrum, incidunt expedita placeat animi explicabo velit iste quaerat, doloremque sint
-                        distinctio consequuntur.</p>
-                        <a href="" class="read">lear more</a>
+                    <i class='bx bxs-happy-heart-eyes' style='color:#00eeff' ></i>
+                    <h2>Maquillaje</h2>
+                    <p>Estoy muy apasionada en el mundo del maquillaje, constantemente me dedico a tomar curso 
+                        que me ayuden a aprender nuevas tendencias y poder tener evidencias de mi desempeño
+                    </p>
                 </div>
             </div>
         </div>
     </section>
-    
-    <h1 class="sub-title">My <span>skills</span></h1>
+
+    <!--SKILLS-->
+
+    <h1 class="sub-title">Mis <span>habilidades</span></h1>
 
     <section>
         <div class="container1" id="skills">
-            <h1 class="heading1">Technical skills</h1>
+            <h1 class="heading1">Habilidades tecnicas</h1>
             <div class="Technical-bars">
                 <div class="bar"><i style="color: #c95d2e;" class='bx bxl-html5'></i>
                     <div class="info">
                         <span>HTML</span>
                     </div>
                     <div class="progress-line html">
-                        <span></span>
+                        <span class="span"></span>
                     </div>
                 </div>
 
@@ -130,16 +154,16 @@
                     <div class="info">
                         <span>JavaScript</span>
                     </div>
-                    <div class="progress-line js">
+                    <div class="progress-line javascript">
                         <span></span>
                     </div>
                 </div>
 
-                <div class="bar"><i style="color: #c32ec9;" class='bx bxl-python'></i>
+                <div class="bar"><i style="color: #148f25;" class='bx bxl-mongodb'></i>
                     <div class="info">
-                        <span>Python</span>
+                        <span>MongoDB</span>
                     </div>
-                    <div class="progress-line Python">
+                    <div class="progress-line mongo">
                         <span></span>
                     </div>
                 </div>
@@ -152,54 +176,55 @@
                         <span></span>
                     </div>
                 </div>
-
             </div>
         </div>
 
         <div class="container1">
-            <h1 class="heading1">Professional skills</h1>
-
+            <h1 class="heading1">Habilidades profesionales</h1>
             <div class="radial-bars">
+
+            <div class="radial-bar">
                 <svg x="0px" y="0px" viewBox="0 0 200 200">
                     <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
                     <circle class="path path-1" cx="100" cy="100" r="80"></circle>
                 </svg>
 
-                <div class="porcentaje">90%</div>
-                <div class="text">Creativity</div>
+                <div class="porcentage">90%</div>
+                <div class="text">Creatividad</div>
             </div>
 
-            <div class="radial-bars">
+            <div class="radial-bar">
                 <svg x="0px" y="0px" viewBox="0 0 200 200">
                     <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                    <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+                    <circle class="path path-2" cx="100" cy="100" r="80"></circle>
                 </svg>
 
-                <div class="porcentaje">65%</div>
-                <div class="text">Communication</div>
+                <div class="porcentage">65%</div>
+                <div class="text">Comunicación</div>
             </div>
 
-            <div class="radial-bars">
+            <div class="radial-bar">
                 <svg x="0px" y="0px" viewBox="0 0 200 200">
                     <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                    <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+                    <circle class="path path-3" cx="100" cy="100" r="80"></circle>
                 </svg>
 
-                <div class="porcentaje">75%</div>
-                <div class="text">Problem Solving</div>
+                <div class="porcentage">75%</div>
+                <div class="text">Resolución de problemas</div>
             </div>
 
-            <div class="radial-bars">
+            <div class="radial-bar">
                 <svg x="0px" y="0px" viewBox="0 0 200 200">
                     <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                    <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+                    <circle class="path path-4" cx="100" cy="100" r="80"></circle>
                 </svg>
 
-                <div class="porcentaje">95%</div>
-                <div class="text">Teamwork</div>
+                <div class="porcentage">95%</div>
+                <div class="text">Trabajo en equipo</div>
             </div>
         </div>
-    </section>
+     </div>
+ </section>
 
 
 
@@ -222,6 +247,7 @@
         crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.6/typed.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/app.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
