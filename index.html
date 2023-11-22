@@ -8,9 +8,8 @@
     <meta name="Description" content="PWA PW.">
     <link rel="apple-touch-icon" href="img/img-Naty.jpeg">
     <title>PORTAFOLIO WEB</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/estilos.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <link rel="manifest" href="manifest.json">
     <meta name="apple-mobile-web-app-capable" content="yes"> 
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -20,34 +19,38 @@
 <body>
     <!--HEADER-->
     <header class="header">
-        <a href="#" class="logo"><span>P</span>ortafolio</a>
+        <a href="#" class="logo">Portafolio</a>
 
+        <div class="bx bx-menu" id="menu-icon"></div>
+       
         <nav class="navbar">
-            <a href="#" style="--i:1" class="active">Inicio</a>
-            <a href="#" style="--i:2">Acerca de</a>
-            <a href="#" style="--i:3">Habilidades</a>
-            <a href="#" style="--i:4">Portafolio</a>
-            <a href="#" style="--i:5">Contacto</a>
+            <a href="#inicio" class="active">Inicio</a>
+            <a href="#acerca de">Acerca de</a>
+            <a href="#eduacion">Educación</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#contacto">Contacto</a>
         </nav>
 
-        <div class="menu-btn">
-            <span></span>
-            <div class="bx bx-menu" id="menu-icon"></div>
-        </div>
     </header>
 
 
     <!--HOME-->
-    <section class="home">
-        <div class="home-text">
-            <p>Ingeniera en Desarrollo y Gestión de Software</p>
+    <section class="home" id="home">
+        <div class="home-content">
             <h1>Natalia Avila Hernandez</h1>
-            <h3>YO SOY UNA <span class="text"></span>
-            </h3>
-            <p>SOY UNA DESARROLLADORA WEB
-                <br>EXPERTA EN CREAR Y DISEÑAR SITIOS WEB
-            </p>
+            <div class="text-animate">
+                <h3>YO SOY UNA <span class="text"></span></h3>
+            </div>
+            <p>Ingeniera en Desarrollo y Gestión de Software</p>
+
+            <div class="btn-box">
+                <a href="/CV/CV NATALIA AVILA HERNANDEZ.pdf" download="CV" class="btn">Descargar CV</a>
+            </div>
+
+
             <div class="home-sci">
+                <a href="#" style="--i:7"><img src="/img/menu.png"></a>
+                <a href="#" style="--i:7"><i class='bx bxl-facebook'></i></a>
                 <a href="#" style="--i:7"><i class='bx bxl-facebook'></i></a>
                 <a href="#" style="--i:8"><i class='bx bxl-instagram'></i></a>
                 <a href="#" style="--i:9"><i class='bx bxl-whatsapp'></i></a>
@@ -126,10 +129,11 @@
 
     <!--SKILLS-->
 
-    <h1 class="sub-title">Mis <span>habilidades</span></h1>
+    <!--<h1 class="sub-title">Mis <span>habilidades</span></h1>-->
 
     <section>
         <div class="container1" id="skills">
+            <h1 class="sub-title">Mis <span>habilidades</span></h1>
             <h1 class="heading1">Habilidades tecnicas</h1>
             <div class="Technical-bars">
                 <div class="bar"><i style="color: #c95d2e;" class='bx bxl-html5'></i>

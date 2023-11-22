@@ -5,7 +5,8 @@ const archivosCache =[
     "/css/style.css",
     "/CV/CV NATALIA AVILA HERNANDEZ.pdf",
     "/js/app.js",
-    "/js/main.js"
+    "/js/main.js",
+    "/img/img-Naty.jpeg",
 ]
 
 self.addEventListener('install', e =>{
