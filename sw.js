@@ -2,7 +2,7 @@ const nombreCache = "PWAPW"
 const archivosCache =[
     "/",
     "/index.html",
-    "/css/style.css",
+    "/css/estilos.css",
     "/CV/CV NATALIA AVILA HERNANDEZ.pdf",
     "/js/app.js",
     "/js/main.js",
