@@ -1,12 +1,12 @@
 const nombreCache = "PWAPW"
 const archivosCache =[
     "/",
-    "/index.html",
-    "/css/estilos.css",
-    "/CV/CV NATALIA AVILA HERNANDEZ.pdf",
-    "/js/app.js",
-    "/js/main.js",
-    "/img/img-Naty.jpeg",
+    "index.html",
+    "css/estilos.css",
+    "CV/CV NATALIA AVILA HERNANDEZ.pdf",
+    "js/app.js",
+    "js/main.js",
+    "img/img-Naty.jpeg",
 ]
 
 self.addEventListener('install', e =>{
